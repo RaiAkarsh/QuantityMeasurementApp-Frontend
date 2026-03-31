@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="main">
+
+  <!-- ✅ TOP HEADER -->
+<div class="header">
+  <h1>Measurement Dashboard</h1>
+
+  <div class="status">
+    <span id="activeType">Length</span>
+    <span id="activeAction">Conversion</span>
+  </div>
+
+  <!-- 🔥 LOGOUT BUTTON -->
+  <button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+      <h3>Choose Type</h3>
+      <button onclick="setType('Length')">Length</button>
+      <button onclick="setType('Weight')">Weight</button>
+      <button onclick="setType('Temperature')">Temp</button>
+      <button onclick="setType('Volume')">Volume</button>
+
+      <h3>Choose Action</h3>
+      <button onclick="setAction('Conversion')">Conversion</button>
+      <button onclick="setAction('Arithmetic')">Arithmetic</button>
+      <button onclick="setAction('Comparison')">Comparison</button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+      <input type="number" id="val1" placeholder="Value 1">
+      <input type="number" id="val2" placeholder="Value 2">
+
+      <select id="fromUnit"></select>
+      <select id="toUnit"></select>
+
+      <button onclick="calculate()">Calculate</button>
+
+      <div class="result">
+        <h2 id="resultText">Result</h2>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

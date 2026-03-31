@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quantity App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <h1>⚡ Quantity Measurement</h1>
+    <p class="tagline">Fast • Accurate • Smart</p>
+
+    <div class="features">
+      <div>📏 Length</div>
+      <div>⚖ Weight</div>
+      <div>🌡 Temperature</div>
+      <div>🧪 Volume</div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right">
+
+    <div class="form-box">
+
+      <h2>Welcome Back 👋</h2>
+      <p class="sub">Login or create your account</p>
+
+      <div class="tabs">
+        <button onclick="showLogin()">Login</button>
+        <button onclick="showSignup()">Signup</button>
+      </div>
+
+      <!-- LOGIN -->
+      <div id="loginForm">
+        <input type="email" placeholder="📧 Email">
+        <input type="password" placeholder="🔒 Password">
+        <button onclick="login()">Login</button>
+      </div>
+
+      <!-- SIGNUP -->
+      <div id="signupForm" style="display:none;">
+        <input type="text" placeholder="👤 Full Name">
+        <input type="email" placeholder="📧 Email">
+        <input type="password" placeholder="🔒 Password">
+        <button onclick="signup()">Create Account</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
