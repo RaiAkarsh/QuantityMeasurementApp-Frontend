@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'REPLACE_WITH_YOUR_GATEWAY_URL'
+  apiUrl: 'https://qty-gateway.onrender.com'
 };
